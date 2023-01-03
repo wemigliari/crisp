@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CRISP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+<meta name="author" content="gettemplates.co" />
+<!--
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+ -->
+
+	<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+<!-- Animate.css -->
+<link rel="icon" href="images/crisp_logo.png">
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- Flexslider  -->
+<link rel="stylesheet" href="css/flexslider.css">
+
+<!-- Owl Carousel  -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<!-- Theme style  -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/regular.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css">
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script defer src="javascript/header.js"></script>
+<script defer src="javascript/footer.js"></script>
+<script>
+function openSlideMenu () {
+	document.getElementById('menu').style.width = '250px';
+	document.getElementById('content').style.marginLeft = '250px';
+}
+
+function closeSlideMenu () {
+	document.getElementById('menu').style.width = '0';
+	document.getElementById('content').style.marginLeft = '0';
+}
+</script>
+
+<script src="https://kit.fontawesome.com/920ba322d1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+:root {
+  --columns: 3;
+  --yellow: rgba(195, 113, 89, 1);
+  --pink: rgba(219, 169, 155, 1);
+  --blue: rgb(20,68,44, 1);
+  --green: rgb(185,201,193, 1);
+  --white: rgba(248, 255, 229, 1);
+}
+
+
+ul{
+  display:grid;
+  grid-template-columns: repeat(var(--columns),1fr);
+  margin: 20px 0px;
+	list-style-type: none;
+}
+
+li{
+  grid-column-end: span 2;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-top: -45%;
+}
+
+li:nth-child(2n){
+  grid-column-start:2;
+}
+
+li::before, li::after {
+  content:'';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 50% 100%,50% 100%;
+  background-position: left, right;
+}
+
+li::before{
+  z-index: -10;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(-45deg,var(--yellow) 53.5%,var(--green) 53.5%,var(--green) 60%,var(--yellow) 60%), linear-gradient(45deg,var(--yellow) 53.5%,var(--green) 53.5%,var(--green) 60%,var(--yellow) 60%);
+}
+
+li::after{
+  clip-path: polygon(100% 50%, 50% 100%, 0 50%, 20% 50%, 50% 80%,80% 50%);
+  -webkit-clip-path: polygon(100% 50%, 50% 100%, 0 50%, 20% 50%, 50% 80%,80% 50%);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg,var(--yellow) 40%,var(--green) 40%), linear-gradient(-45deg,var(--yellow) 40%,var(--green) 40%);
+}
+
+li:nth-child(2n)::before{
+  background-image: linear-gradient(-45deg,var(--pink) 53.5%,var(--blue) 53.5%,var(--blue) 60%,var(--pink) 60%), linear-gradient(45deg,var(--pink) 53.5%,var(--blue) 53.5%,var(--blue) 60%,var(--pink) 60%);
+}
+
+li:nth-child(2n)::after{
+  background-image: linear-gradient(45deg,var(--pink) 40%,var(--blue) 40%), linear-gradient(-45deg,var(--pink) 40%,var(--blue) 40%);
+}
+
+li:nth-child(5n)::before{
+  background-image: linear-gradient(-45deg,var(--green) 53.5%,var(--pink) 53.5%,var(--pink) 60%,var(--green) 60%), linear-gradient(45deg,var(--green) 53.5%,var(--pink) 53.5%,var(--pink) 60%,var(--green) 60%);
+}
+
+li:nth-child(5n)::after{
+  background-image: linear-gradient(45deg,var(--green) 40%,var(--pink) 40%), linear-gradient(-45deg,var(--green) 40%,var(--pink) 40%);
+}
+
+li:nth-child(7n)::before,li:nth-child(7n-4)::before{
+  background-image: linear-gradient(-45deg,var(--blue) 53.5%,var(--white) 53.5%,var(--white) 60%,var(--blue) 60%), linear-gradient(45deg,var(--blue) 53.5%,var(--white) 53.5%,var(--white) 60%,var(--blue) 60%);
+}
+
+li:nth-child(7n)::after,li:nth-child(7n-4)::after{
+  background-image: linear-gradient(45deg,var(--blue) 40%,var(--white) 40%), linear-gradient(-45deg,var(--blue) 40%,var(--white) 40%);
+}
+
+li:nth-child(9n)::before,li:nth-child(9n-5)::before{
+  background-image: linear-gradient(-45deg,var(--white) 53.5%,var(--green) 53.5%,var(--green) 60%,var(--white) 60%), linear-gradient(45deg,var(--white) 53.5%,var(--green) 53.5%,var(--green) 60%,var(--white) 60%);
+}
+
+li:nth-child(9n)::after,li:nth-child(9n-5)::after{
+  background-image: linear-gradient(45deg,var(--white) 40%,var(--green) 40%), linear-gradient(-45deg,var(--white) 40%,var(--green) 40%);
+}
+
+img{
+  position: absolute;
+  width: 43%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-60%);
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
+  transition-property: transform;
+  transition-duration: .3s;
+}
+
+img:hover{
+  transform: translateX(-40%) translateY(-70%) rotatez(25deg);
+}
+
+a {
+	color: #fff;
+}
+
+.fh5co-footer-links a:hover {
+  text-decoration: none;
+  color: #e1b8ac;
+}
+
+i:hover {
+  text-decoration: none;
+  color: #c37159;
+}
+
+
+@media (min-width:450px){
+  ul{
+    margin: 190px 40px;
+  }
+}
+@media (min-width:600px){
+  :root {
+    --columns: 5;
+  }
+  li:nth-child(2n){
+    grid-column-start:auto;
+  }
+  li:nth-child(4n-1){
+    grid-column-start:2;
+  }
+}
+@media (min-width:900px){
+  :root {
+    --columns: 7;
+  }
+  li:nth-child(4n-1){
+    grid-column-start:auto;
+  }
+  li:nth-child(6n-2){
+    grid-column-start:2;
+  }
+}
+@media (min-width:1200px){
+  :root {
+    --columns: 9;
+  }
+  li:nth-child(6n-2){
+    grid-column-start:auto;
+  }
+  li:nth-child(8n-3){
+    grid-column-start:2;
+  }
+}
+@media (min-width:1500px){
+  :root {
+    --columns: 11;
+  }
+  li:nth-child(8n-3){
+    grid-column-start:auto;
+  }
+  li:nth-child(10n-4){
+    grid-column-start:2;
+  }
+}
+@media (min-width:1800px){
+  :root {
+    --columns: 13;
+  }
+  li:nth-child(10n-4){
+    grid-column-start:auto;
+  }
+  li:nth-child(12n-5){
+    grid-column-start:2;
+  }
+}
+@media (min-width:2100px){
+  :root {
+    --columns: 15;
+  }
+  li:nth-child(12n-5){
+    grid-column-start:auto;
+  }
+  li:nth-child(14n-6){
+    grid-column-start:2;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="header"></div>
+
+<div id="fh5co-artigos" style="background-color:#ddd9d2;">
+	<div>
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="margin-top: 20px; margin-bottom: 20px;">
+				<span></span>
+				<span>Publicações</span>
+				<h2>Artigos</h2>
+				<p style="color:#fff;"></p>
+			</div>
+
+<ul style="padding-top: 80px;">
+  <li><a href="https://www.amazon.com/Magicians-Impossible-Brad-Abraham-audiobook/dp/B0752WX9PD/ref=sr_1_2?keywords=magicians+impossible&qid=1667317284&qu=eyJxc2MiOiIxLjM4IiwicXNhIjoiMC45NSIsInFzcCI6IjAuODEifQ%3D%3D&sr=8-2" target="-_blank"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></a></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+  <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+</ul>
+
+
+</div>
+</div>
+
+<div>
+	<div class="container">
+		<div id="fh5co-livros" class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="margin-top: 20px; margin-bottom: 20px;">
+			<span></span>
+			<span>Publicações</span>
+			<h2>Livros</h2>
+			<p style="color:#fff;"></p>
+		</div>
+
+<ul style="padding-top: 80px;">
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+</ul>
+
+
+</div>
+</div>
+
+<div>
+	<div class="container">
+		<div id="fh5co-teses-dissertacoes" class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="margin-top: 20px; margin-bottom: 20px;">
+			<span></span>
+			<span>Publicações</span>
+			<h2>Teses & Dissertações</h2>
+			<p style="color:#fff;"></p>
+		</div>
+
+<ul style="padding-top: 80px;">
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+<li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+
+			<div id="fh5co-started">
+				<div class="container">
+					<div class="row">
+					<div class="animate-box">
+					</div>
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Newsletter</h2>
+						<p>Deixe seu e-mail e enviamos notícias para você.</p>
+					</div>
+				  </div>
+					<div class="row">
+					<div class="animate-box">
+						<div class="col-md-8 col-md-offset-2">
+							<form class="form-inline">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label for="email" class="sr-only">E-mail</label>
+										<input type="email" class="form-control" id="email" placeholder="E-mail">
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<button type="submit" class="btn btn-default btn-block">Inscrever-me</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<footer id="fh5co-footer" role="contentinfo" style="padding-bottom: 60px;">
+			  <div class="container">
+			    <div class="row row-pb-md">
+			      <div class="col-md-4 fh5co-widget">
+			        <h3 style="color:#fff; font-size: 40px;">crisp</h3>
+			        <div style="color:#fff;">
+			        <p>
+			        Av. Presidente Antônio Carlos, nº 6627 <br>Pampulha - Unidade Administrativa III <br>
+			        Universidade Federal de Minas Gerais <br>
+			        Tel.: (31) 3409-6310/3409-6306
+			        </p></div>
+			      </div>
+			      <div class="col-md-3 col-sm-3 col-xs-6 col-md-push-1" style="padding-top: 50px;">
+
+			        <ol class="fh5co-footer-links">
+			          <a href="#">crisp</a><br>
+			          <a href="#">equipe</a><br>
+			          <a href="#">projetos</a><br>
+			          <a href="#">pesquisa</a><br>
+			          <a href="#">publicações</a>
+			        </ol>
+
+			      </div>
+
+			      <div class="col-md-3 col-sm-3 col-xs-6 col-md-push-1" style="padding-top: 50px;">
+			        <ol class="fh5co-footer-links">
+			          <a href="#">banco de dados</a><br>
+			          <a href="#">contato</a><br>
+			          <a href="#">termos de acesso</a><br>
+			          <a href="#">privacidade</a><br>
+			          <a href="#">notícias</a>
+			        </ol>
+			      </div>
+			    </div>
+
+			    <div class="row copyright">
+			      <div class="col-md-12 text-center">
+			        <p>
+			          <small class="block" style="color: #14442c;">&copy; 2022. All Rights Reserved.</small>
+			          <small class="block" style="color: #14442c">Criado por <a href="http://lattes.cnpq.br/2780207265936546" style="color: #14442c;" target="_blank">W. Migliari</a></small>
+			        </p>
+			        <p>
+			          <ol class="fh5co-social-icons" style="padding-top: 10px;">
+									<a style="margin-left: 15px;" href="https://www.instagram.com/crisp.ufmg/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			            <a style="margin-left: 15px;" href="https://www.facebook.com/CrispUFMG/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+			            <a style="margin-left: 15px;" href="https://open.spotify.com/show/08kfV9vcmBXKh8CQ3n8zaH" target="_blank"><i class="fa fa-spotify fa-2x"></i></a>
+			            <a style="margin-left: 15px;" href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+			          </ol>
+			        </p>
+			      </div>
+			    </div>
+
+			  </div>
+			</footer>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+<!-- Barra de busca -->
+
+<script>
+      function search_animal() {
+      	let input = document.getElementById('searchbar1').value
+      	input=input.toLowerCase();
+      	let x = document.getElementsByClassName('publicacoes');
+
+      	for (i = 0; i < x.length; i++) {
+      		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      			x[i].style.display="none";
+      		}
+      		else {
+      			x[i].style.display="list-item";
+      		}
+      	}
+      }
+</script>
+
+
+
+	</body>
+</html>
