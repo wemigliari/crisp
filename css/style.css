@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2018-04-23T16:36:35+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-04T02:22:54+01:00
+ * @Last modified time: 2023-01-04T02:31:37+01:00
  */
 
 
@@ -632,7 +632,7 @@ i:hover {
 }
 
 .equipe{
-  display: grid;
+  display: inline-block;
 }
 
 .fh5co-social-icons {
