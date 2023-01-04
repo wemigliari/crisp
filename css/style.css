@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2018-04-23T16:36:35+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-04T02:12:39+01:00
+ * @Last modified time: 2023-01-04T02:22:54+01:00
  */
 
 
@@ -629,6 +629,10 @@ i:hover {
   font-weight: normal;
   display: block;
   color: #c97f69;
+}
+
+.equipe{
+  display: grid;
 }
 
 .fh5co-social-icons {
@@ -2384,9 +2388,8 @@ height: 100%;
 }
 
 @media screen and (min-width:541px){
- .row {
+ row.equipe {
    padding-left: 0px;
-   display: grid;
  }
 }
 
