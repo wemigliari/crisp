@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2022-10-11T17:26:33+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-03T17:54:00+01:00
+ * @Last modified time: 2023-01-04T17:53:37+01:00
  */
 
 footer.innerHTML = `
@@ -44,7 +44,7 @@ footer.innerHTML = `
         <p>
           <small class="block" style="color: #5a7c6b;">&copy; 2022. All Rights Reserved.</small>
           <small class="block" style="color: #5a7c6b">Criado por <a href="http://lattes.cnpq.br/2780207265936546" style="color: #5a7c6b;" target="_blank">W. Migliari</a></small>
-          <small class="block" style="color: #5a7c6b">Webpage financiada pelo Projeto Cadê os meus direitos?</small>
+          <small class="block" style="color: #5a7c6b">Webpage financiada pelo Projeto Cadê meus direitos?</small>
         </p>
         <p>
           <ol class="fh5co-social-icons" style="padding-top: 10px;">
