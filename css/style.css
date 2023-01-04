@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2018-04-23T16:36:35+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-03T20:04:05+01:00
+ * @Last modified time: 2023-01-04T01:26:09+01:00
  */
 
 
@@ -618,6 +618,7 @@ i:hover {
 .fh5co-staff h3 {
   font-size: 24px;
   margin-bottom: 5px;
+  line-height: 30px;
 }
 .fh5co-staff p {
   margin-bottom: 30px;
@@ -1185,7 +1186,7 @@ i:hover {
   display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-family: "Titillium Web", Arial, sans-serif;
 }
@@ -2385,6 +2386,26 @@ height: 100%;
 @media screen and (min-width:541px){
  .row {
    padding-left: 0px;
+   display: grid;
+ }
+}
+
+@media screen and (min-width:280px){
+ .fh5co-staff p {
+  margin-bottom: 0px;
+ }
+}
+
+@media (min-width:1024px) and (max-width: 1024px){
+ .container {
+  margin-left: 40px;
+  margin-right: 0px;
+ }
+}
+
+@media screen and (min-width:280px){
+ .fh5co-staff {
+  margin-top: 50px;
  }
 }
 
