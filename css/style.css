@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2018-04-23T16:36:35+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-04T03:14:04+01:00
+ * @Last modified time: 2023-01-04T11:49:08+01:00
  */
 
 
@@ -2333,7 +2333,7 @@ height: 100%;
 }
 
 
-@media (min-width:913px) and (max-width:1366px){
+@media screen and (min-width:913px) {
   .row .product {
    margin-left: 0px;
    margin-right: 0px;
