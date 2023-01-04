@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2018-04-23T16:36:35+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2023-01-04T02:47:19+01:00
+ * @Last modified time: 2023-01-04T03:14:04+01:00
  */
 
 
@@ -2269,11 +2269,8 @@ height: 100%;
      padding-left: 20px;
      padding-right: 20px;
    }
-
-   .col-md-4.col-sm-4 {
-     padding-right: 0px;
-   }
  }
+
 
  @media screen and (max-width: 414px) {
     .product.publicacoes h3 {
@@ -2385,14 +2382,14 @@ height: 100%;
 
 
 @media (min-width:415px) and (max-width: 540px){
- .row#equipe {
+ .row.equipe {
    padding-left: 60px;
    padding-right: 60px;
  }
 }
 
 @media screen and (min-width:541px){
- row.equipe {
+ .row.equipe {
    padding-left: 0px;
  }
 }
