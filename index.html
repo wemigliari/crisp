@@ -80,6 +80,27 @@ function closeSlideMenu () {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
+
+<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script>
+	function SubForm (){
+		$.ajax({
+			url:"https://api.apispreadsheets.com/data/2683lcEO4KviJImt/",
+			type:"post",
+			data:$("#myForm").serializeArray(),
+			success: function(){
+				alert("Form Data Submitted :)")
+			},
+			error: function(){
+				alert("There was an error :(")
+			}
+		});
+	}
+</script>
+
 </head>
 	<body>
 
@@ -622,11 +643,12 @@ function closeSlideMenu () {
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">E-mail</label>
-								<input type="email" class="form-control" id="email" placeholder="E-mail">
+								<input name="E-mail" type="email" class="form-control" id="email" placeholder="E-mail"
+								oninvalid="this.setCustomValidity('Por favor, verifique se o seu e-mail foi digitado corretamente. Recarregue a página e tente novamente.')"></input>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block">Inscrever-me</button>
+							<button type="submit" class="btn btn-default btn-block" onclick='SubForm()'>Inscrever-me</button>
 						</div>
 					</form>
 				</div>
