@@ -92,10 +92,10 @@ function closeSlideMenu () {
 			type:"post",
 			data:$("#myForm").serializeArray(),
 			success: function(){
-				alert("Form Data Submitted :)")
+				alert("CRISP/UFMG\nMuito obrigado pelo seu interesse em nossa newsletter. Em breve, você receberá notícias sobre pesquisa, pubicações e muito mais.")
 			},
 			error: function(){
-				alert("There was an error :(")
+				alert("Ocorreu algum problema. Verifique seu e-mail e tente novamente.")
 			}
 		});
 	}
@@ -640,7 +640,7 @@ function closeSlideMenu () {
 			<div class="row">
 			<div>
 				<div class="col-md-8 col-md-offset-2">
-					<form class="form-inline" id="myForm">
+					<form id="myForm" class="form-inline">
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label class="sr-only">E-mail</label>
@@ -649,7 +649,7 @@ function closeSlideMenu () {
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button onclick='SubForm ()' class="btn btn-default btn-block">Inscrever-me</button>
+							<button onclick="SubForm()" class="btn btn-default btn-block">Inscrever-me</button>
 						</div>
 					</form>
 				</div>
