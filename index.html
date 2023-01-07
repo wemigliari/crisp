@@ -86,13 +86,13 @@ function closeSlideMenu () {
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 	crossorigin="anonymous"></script>
 <script>
-	function SubForm (){
+	function SubForm(){
 		$.ajax({
 			url:"https://api.apispreadsheets.com/data/2683lcEO4KviJImt/",
 			type:"post",
 			data:$("#myForm").serializeArray(),
 			success: function(){
-				alert("Obrigado por fazer parte da nossa newsletter. Em breve, você receberá notícias sobre pesquisa, projetos e muito mais. Centro de Estudos de Criminalidade e Segurança Pública (CRISP).")
+				alert("Obrigado por assinar a newsletter do Centro de Estudos de Criminalidade e Segurança Pública (CRISP). Em breve, você receberá notícias sobre pesquisa, projetos e muito mais.")
 			},
 			error: function(){
 				alert("Veja se você preencheu corretamente o campo e-mail e tente outra vez.")
@@ -101,18 +101,6 @@ function closeSlideMenu () {
 	}
 </script>
 
-<script>
-		document.getElementById("myForm").addEventListener("click", redirectFunction);
-
-		function redirectFunction(){
-				window.location.href = "contact.html";
-				// You can also use window.location.replace method
-
-
-				window.location.replace("https://wemigliari.github.io/crisp/index.html#fh5co-started");
-
-		}
-</script>
 
 </head>
 	<body>
@@ -696,7 +684,6 @@ function closeSlideMenu () {
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
 
 	</body>
 </html>
