@@ -86,16 +86,16 @@ function closeSlideMenu () {
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 	crossorigin="anonymous"></script>
 <script>
-	function SubForm(){
+	function SubForm (){
 		$.ajax({
 			url:"https://api.apispreadsheets.com/data/2683lcEO4KviJImt/",
 			type:"post",
 			data:$("#myForm").serializeArray(),
 			success: function(){
-				alert("Obrigado por assinar a newsletter do Centro de Estudos de Criminalidade e Segurança Pública (CRISP). Em breve, você receberá notícias sobre pesquisa, projetos e muito mais.")
+				alert("Form Data Submitted :)")
 			},
 			error: function(){
-				alert("Veja se você preencheu corretamente o campo e-mail e tente outra vez.")
+				alert("There was an error :(")
 			}
 		});
 	}
@@ -649,7 +649,7 @@ function closeSlideMenu () {
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button onclick='SubForm()' class="btn btn-default btn-block">Inscrever-me</button>
+							<button onclick='SubForm ()' class="btn btn-default btn-block">Inscrever-me</button>
 						</div>
 					</form>
 				</div>
