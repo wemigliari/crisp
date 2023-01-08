@@ -536,35 +536,57 @@ i:hover {
 </div>
 
 
-<div id="fh5co-started">
-	<div class="container">
-		<div class="row">
-		<div class="animate-box">
-		</div>
-		<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-			<h2>Newsletter</h2>
-			<p>Deixe seu e-mail e enviamos notícias para você.</p>
-		</div>
-		</div>
-		<div class="row">
-		<div>
-			<div class="col-md-8 col-md-offset-2">
-				<form action="contact.html" id="myForm" class="form-inline">
-					<div class="col-md-6 col-sm-6">
-						<div class="form-group">
-							<label class="sr-only">E-mail</label>
-							<input name="E-mail" class="form-control" placeholder="E-mail"></input>
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row">
+			<div class="animate-box">
+			</div>
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<h2>Newsletter</h2>
+				<p>Deixe seu e-mail e enviamos notícias para você.</p>
+			</div>
+			</div>
+			<div class="row">
+			<div>
+				<div class="col-md-8 col-md-offset-2">
+					<form action="contact.html" id="myForm" class="form-inline">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label class="sr-only">E-mail</label>
+								<input type="email" id="emailField" required name="E-mail" class="form-control" placeholder="E-mail"></input>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<button onclick="SubForm()" class="btn btn-default btn-block">Inscrever-me</button>
-					</div>
-				</form>
+						<div class="col-md-6 col-sm-6">
+							<button id="okButton" disabled onclick="SubForm()" class="btn btn-default btn-block">Inscrever-me</button>
+						</div>
+					</form>
+
+<script>
+const myForm = document.getElementById('myForm');
+const emailField = document.getElementById('emailField');
+const okButton = document.getElementById('okButton');
+
+emailField.addEventListener('keyup', function (event) {
+  isValidEmail = emailField.checkValidity();
+
+  if ( isValidEmail ) {
+    okButton.disabled = false;
+  } else {
+    okButton.disabled = true;
+  }
+});
+
+okButton.addEventListener('click', function (event) {
+  signUpForm.submit();
+});
+</script>
+
+				</div>
 			</div>
 		</div>
+		</div>
 	</div>
-	</div>
-</div>
 
 			<footer id="fh5co-footer" role="contentinfo" style="padding-bottom: 60px;">
 			  <div class="container">
