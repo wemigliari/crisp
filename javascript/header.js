@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2022-10-11T17:26:33+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2024-09-17T22:00:36+02:00
+ * @Last modified time: 2024-09-17T22:11:56+02:00
  */
 
 header.innerHTML = `
@@ -78,7 +78,7 @@ header.innerHTML = `
 	<div class="dropdown-2" style="margin-top: 0px; margin-bottom: 0px;">
 		<button class="dropbtn-2"><i class="fa-regular fa-pen-to-square fa-2x"></i></button>
 			<div class="dropdown-content-2">
-				<a href="por_elas.html" style="height: 67px;">por elas</a>
+				<a href="por_elas.html" style="height: 68px;">por elas</a>
 			</div>
 	</div>
 </li>
@@ -87,7 +87,7 @@ header.innerHTML = `
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa-regular fa-newspaper fa-2x"></i></button>
 			<div class="dropdown-content-2">
-				<a href="newsletter.html" style="height: 67px;">newsletter</a>
+				<a href="newsletter.html" style="height: 68px;">newsletter</a>
 			</div>
 	</div>
 </li>
@@ -105,7 +105,7 @@ header.innerHTML = `
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
 			<div class="dropdown-content-2">
-				<a href="search.html" style="height: 67px;">arquivo</a>
+				<a href="search.html" style="height: 68px;">arquivo</a>
 			</div>
 	</div>
 </li>
