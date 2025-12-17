@@ -2,18 +2,19 @@
  * @Author: wellingtonmigliari
  * @Date:   2022-10-11T17:26:33+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2025-11-09T11:54:26+01:00
+ * @Last modified time: 2025-12-17T18:13:21+01:00
  */
 
 header.innerHTML = `
 <div class="area">
 </div>
 <nav class="main-menu">
-<li style="width: 0px;">
+<li style="width: 0px; margin-bottom: 5px;">
 	<div class="dropdown-2">
 		<a href="index.html" style="height: 68px;"><i class="fa fa-home fa-2x" style="font-size: 2.9em; margin-left: 12px; margin-right: 12px; margin-top: 20px;"></i></a>
 	</div>
 </li>
+
 <li style="width: 0px;">
 	<div class="dropdown-2" style="margin-top: 5px; margin-bottom: 5px;">
 		<button class="dropbtn-2"><i class="fa fa-duotone fa-people-group fa-2x" style="font-size: 2.1em; margin-left: -4px;"></i></button>
@@ -24,7 +25,21 @@ header.innerHTML = `
 			</div>
 	</div>
 </li>
-
+<li style="width: 0px;">
+	<div class="dropdown-2">
+		<button class="dropbtn-2"><i class="fa fa-solid fa-book-open-reader fa-2x"></i></button>
+			<div class="dropdown-content-2" style="min-width: 294px;">
+				<a href="sistema_prisional.html" style="height: 68px;">sistema prisional</a>
+				<a href="sistema_justica_criminal.html" style="height: 68px;">justiça criminal e segurança pública</a>
+				<a href="violencia_genero.html" style="height: 68px;">violência de gênero</a>
+				<a href="violencia_racial.html" style="height: 68px;">violência racial</a>
+				<a href="violencia_juventude.html" style="height: 68px;">violência contra a juventude</a>
+				<a href="politicas_publicas.html" style="height: 68px;">políticas públicas</a>
+				<a href="seguranca_publica.html" style="height: 68px;">profissionais de segurança pública</a>
+				<a href="outros_projetos.html" style="height: 68px;">outros projetos</a>
+			</div>
+	</div>
+</li>
 <li style="width: 0px;">
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa fa-solid fa-graduation-cap fa-2x"></i></button>
@@ -34,18 +49,6 @@ header.innerHTML = `
 			</div>
 	</div>
 </li>
-<li style="width: 0px;">
-	<div class="dropdown-2">
-		<button class="dropbtn-2"><i class="fa fa-solid fa-book-open-reader fa-2x"></i></button>
-			<div class="dropdown-content-2" style="min-width: 224px;">
-				<a href="cade_meus_direitos.html" style="height: 68px;">cadê meus direitos?</a>
-				<a href="erasmus.html" style="height: 68px;">erasmus-success</a>
-				<a href="politicas_publicas.html" style="height: 68px;">políticas públicas CRISP</a>
-				<a href="projetos.html" style="height: 68px;">todos os projetos</a>
-			</div>
-	</div>
-</li>
-
 <li style="width: 0px;">
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa fa-solid fa-book fa-2x"></i></button>
@@ -59,7 +62,7 @@ header.innerHTML = `
 <li>
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa fa-solid fa-timeline fa-2x"></i></button>
-		<div class="dropdown-content-2" style="min-width: 224px;">
+		<div class="dropdown-content-2" style="min-width: 284px;">
 		<a href="linha_do_tempo_unidades_prisionais.html" style="height: 68px;">sobre unidades prisionais</a>
 		<a href="linha_do_tempo.html" style="height: 88px;">sobre legislação para as prisões</a>
 		<a href="linha_do_tempo_fatos_marcantes.html" style="height: 88px;">fatos marcantes para o sistema prisional mineiro</a>
@@ -102,6 +105,7 @@ header.innerHTML = `
 			</div>
 	</div>
 </li>
+<!--
 <li>
 	<div class="dropdown-2">
 		<button class="dropbtn-2"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>

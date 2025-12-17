@@ -2,7 +2,7 @@
  * @Author: wellingtonmigliari
  * @Date:   2022-10-11T17:26:33+02:00
  * @Last modified by:   wellingtonmigliari
- * @Last modified time: 2025-11-09T00:47:13+01:00
+ * @Last modified time: 2025-12-17T14:22:34+01:00
  */
 
 footer.innerHTML = `
@@ -23,18 +23,16 @@ footer.innerHTML = `
         <ol class="fh5co-footer-links">
           <li><a href="sobre_crisp.html">sobre</a></li>
           <li><a href="equipe.html">equipe</a></li>
-          <li><a href="cade_meus_direitos.html">cadê meus direitos?</a></li>
-          <li><a href="erasmus.html">erasmus-success</a></li>
-          <li><a href="publicacoes_crisp_artigos.html">artigos</a></li>
+          <li><a href="entrevistas.html">crisp podcasts</a></li>
+          <li><a href="midia_noticias.html">imprensa</a></li>
         </ol>
       </div>
       <div class="col-md-3" style="padding-top: 50px;">
         <ol class="fh5co-footer-links">
+          <li><a href="publicacoes_crisp_artigos.html">artigos</a></li>
           <li><a href="entrevistas.html">crisp podcasts</a></li>
-          <li><a href="politica_protecao_dados.html">privacidade</a></li>
-          <li><a href="politica_protecao_dados.html">proteção de dados</a></li>
-          <li><a href="midia_noticias.html">imprensa</a></li>
-            <li><a href="covid.html">covid-19</a></li>
+          <li><a href="por_elas.html">por elas</a></li>
+          <li><a href="politica_protecao_dados.html">privacidade e proteção de dados</a></li>
         </ol>
       </div>
     </div>
@@ -42,7 +40,7 @@ footer.innerHTML = `
     <div class="row copyright">
       <div class="col-md-12 text-center">
         <p>
-          <small class="block" style="color: #5a7c6b;">&copy; 2022. All Rights Reserved.</small>
+          <small class="block" style="color: #5a7c6b;">&copy; 2022-2025. All Rights Reserved.</small>
           <small class="block" style="color: #5a7c6b">Criado por <a href="http://lattes.cnpq.br/2780207265936546" style="color: #5a7c6b;" target="_blank">W. Migliari</a></small>
           <small class="block" style="color: #5a7c6b">Webpage financiada pelo Projeto Cadê meus direitos?</small>
         </p>
